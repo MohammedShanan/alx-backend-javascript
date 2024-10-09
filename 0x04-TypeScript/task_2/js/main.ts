@@ -60,15 +60,12 @@ function executeWork(employee: Director | Teacher): string {
 
 type Subjects = "Math" | "History";
 
-// Step 2: Implement the teachClass Function
 function teachClass(todayClass: Subjects): string {
   if (todayClass === "Math") {
     return "Teaching Math";
   } else if (todayClass === "History") {
     return "Teaching History";
   } else {
-    // This line is technically unreachable due to type safety,
-    // but it's a good practice to handle all possible cases.
     return "Invalid subject";
   }
 }
